@@ -22,22 +22,22 @@ public class BasicAuthTest extends BaseTest {
     
     @Test(priority = 3)
     public void TC_LoginWithoutPassword(){
-		BasicAuthPage.loginFailWithNullPassword("smoulickn@gmail.com");
+		BasicAuthPage.loginFailWithNullPassword("sn@gmail.com");
     }
     
     @Test(priority = 4)
     public void TC_LoginWithWrongEmail(){
-		BasicAuthPage.loginFailWithEmailDoesNotExist("Bal@chal.com", "Chal");
+		BasicAuthPage.loginFailWithEmailDoesNotExist("Ba@cal.com", "Cal");
     }
     
     @Test(priority = 5)
     public void TC_LoginWithWrongPassword(){
-		BasicAuthPage.loginFailWithIncorrectPassword("sde.sayan@gmail.com", "Chal");
+		BasicAuthPage.loginFailWithIncorrectPassword("sn@gmail.com", "Cal");
     }
     
     @Test(priority = 6)
     public void TC_LoginWithValidCredential(){
-		BasicAuthPage.loginSuccessWithValidCredentials("sde.sayan@gmail.com", "a1@b2#c3$d4");
+		BasicAuthPage.loginSuccessWithValidCredentials("sn@gmail.com", "myCred@12354");
     }
     
 
